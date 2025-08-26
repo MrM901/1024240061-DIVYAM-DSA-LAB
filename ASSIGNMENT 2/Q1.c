@@ -16,7 +16,7 @@ int iterative_binary_search(int arr[], int n, int x) {
             max = mid - 1;
         }
     }
-    return -1;
+    return 1;
 }
 
 int main() {
@@ -30,4 +30,5 @@ int main() {
         printf("Element is present at index %d\n", result);
     }
     return 0;
+
 }
