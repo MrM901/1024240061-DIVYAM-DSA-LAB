@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
-void createArray(int arr[], int *size, const int MAX_SIZE);
-void displayArray(int arr[], int size);
-void insertElement(int arr[], int *size, const int MAX_SIZE);
-void deleteElement(int arr[], int *size);
-void linearSearch(int arr[], int size);
-
 // Function to create an array
 void createArray(int arr[], int *size, const int MAX_SIZE) {
     if (*size > 0) {
@@ -163,5 +157,6 @@ int main() {
 
     return 0;
 }
+
 
 
