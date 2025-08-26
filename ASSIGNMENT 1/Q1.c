@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // Required for exit()
+#include <stdlib.h> 
 
 // Function prototypes
 void createArray(int arr[], int *size, const int MAX_SIZE);
@@ -164,3 +164,4 @@ int main() {
 
     return 0;
 }
+
