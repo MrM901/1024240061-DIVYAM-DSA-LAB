@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
-// Function prototypes
 void createArray(int arr[], int *size, const int MAX_SIZE);
 void displayArray(int arr[], int size);
 void insertElement(int arr[], int *size, const int MAX_SIZE);
@@ -164,4 +163,5 @@ int main() {
 
     return 0;
 }
+
 
