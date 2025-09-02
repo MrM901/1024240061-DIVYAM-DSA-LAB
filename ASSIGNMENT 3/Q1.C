@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 5
+#define SIZE 100
 
 int stack[SIZE];
 int stack_size = 0;
@@ -18,18 +18,15 @@ int main() {
         scanf("%d", &choice);
 
         if (choice == 1) {
-            if (stack_size == SIZE) {
-                printf("Stack is full!!\n");
-            } else {
                 printf("Enter value to push: ");
                 scanf("%d", &value);
                 stack[stack_size] = value;
                 stack_size++;
                 printf("%d pushed to stack.\n", value);
-            }
+            
         } else if (choice == 2) {
             if (stack_size == 0) {
-                printf("Stack is empty!!\n");
+                printf("Stack is empty!\n");
             } else {
                 stack_size--;
                 value = stack[stack_size];
@@ -37,7 +34,7 @@ int main() {
             }
         } else if (choice == 3) {
             if (stack_size == 0) {
-                printf("Stack is empty!!\n");
+                printf("Stack is empty!\n");
             } else {
                 printf("Stack elements are: ");
                 for (int i = 0; i < stack_size; i++) {
@@ -47,7 +44,7 @@ int main() {
             }
         } else if (choice == 4) {
             if (stack_size == 0) {
-                printf("Stack is empty!!\n");
+                printf("Stack is empty!\n");
             } else {
                 printf("Top element is: %d\n", stack[stack_size - 1]);
             }
